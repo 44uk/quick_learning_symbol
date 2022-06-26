@@ -7,9 +7,14 @@
     "lint": "textlint ./*.md",
     "plint": "textlint ./*.md -f pretty-error",
     "fix": "textlint ./*.md --fix",
+    "build": "vivliostyle build",
+    "press": "vivliostyle build --press-ready",
+    "preview": "vivliostyle preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@vivliostyle/cli": "^5.1.0",
+    "@vivliostyle/theme-techbook": "^0.4.1",
     "textlint": "^12.2.1",
     "textlint-rule-ja-no-space-between-full-width": "^2.2.0",
     "textlint-rule-preset-ja-spacing": "^2.2.0",
